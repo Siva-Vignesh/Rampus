@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ca37"
+    tools:context=".thirdyear2_bsccs">
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:background="@drawable/whitecircle"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginEnd="10dp"
+        android:rotation="-45"/>
+    <TextView
+        android:id="@+id/bsccs_s6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Sixth Semester"
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bsccs_python"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_s6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/bsccs_ost"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/opensansbold"
+        android:text="Python"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccs_ooad"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_s6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient2"
+        android:fontFamily="@font/opensansbold"
+        android:text="Object Oriented Analysis and Design"
+        android:textColor="#ffffff"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/bsccs_aies"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_python"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/bsccs_dm"
+        android:background="@drawable/gradient5"
+        android:fontFamily="@font/opensansbold"
+        android:text="Artificial Intilligence \nand \nExpert System "
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccs_ecom"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_ooad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="E- Commerce"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccs_ss"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_aies"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/bsccs_sa"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="System Software"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccs_wi"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_aies"
+        android:layout_alignStart="@+id/bsccs_dm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Web Intelligence"
+        android:textColor="#ffffff"
+        android:textSize="10sp"/>
+    <Button
+        android:id="@+id/bsccs_cc"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_ss"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/bsccs_sa"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Cloud Computing"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccs_bda"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccs_ss"
+        android:layout_alignStart="@+id/bsccs_dm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Big Data Analytics"
+        android:textColor="#ffffff"
+        android:textSize="10sp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView126"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

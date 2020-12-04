@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ca37"
+    tools:context=".thirdyear2">
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:background="@drawable/whitecircle"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginEnd="10dp"
+        android:rotation="-45"/>
+    <TextView
+        android:id="@+id/s6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/sixth_semester"
+        android:textColor="#111111"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/ooad"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/s6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/ecom"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/object_oriented_analysis_and_design"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/ecom"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/s6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient2"
+        android:text="E-Commerce"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/cns"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ecom"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Cryptography &amp; Network Security"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/dm"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ecom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/cns"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/data_mining_and_warehousing"
+        android:textColor="#fff" />
+    <Button
+    android:id="@+id/soa"
+    android:layout_width="150dp"
+    android:layout_height="75dp"
+    android:layout_below="@+id/cns"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/gradient2"
+    android:fontFamily="@font/opensansbold"
+    android:text="Service Oriented Architecture"
+    android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/imad"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/cns"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/cns"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Introduction to Mobile Application Development"
+        android:textColor="#fff" />
+    <Button
+        android:id="@+id/pp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/soa"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gradient5"
+        android:fontFamily="@font/opensansbold"
+        android:text="Python Programming"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/ai"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/soa"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/cns"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Artificial Intelligence"
+        android:textColor="#fff" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

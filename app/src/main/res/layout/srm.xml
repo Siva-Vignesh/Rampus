@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
+    tools:context=".srm">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="SRM Websites !!"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#fff"
+        android:layout_above="@id/erp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="50dp"/>
+    <Button
+        android:id="@+id/erp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/feekart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn1"
+        android:text="SRM  ERP"
+        android:fontFamily="@font/opensansbold"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/feekart"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn1"
+        android:text="SRM  feekart"
+        android:fontFamily="@font/opensansbold"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/feekart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn1"
+        android:text="SRM Results"
+        android:fontFamily="@font/opensansbold"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/facultylogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn1"
+        android:text="@string/faculty_login"
+        android:fontFamily="@font/opensansbold"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="15dp" />
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#fff"
+        android:layout_below="@id/facultylogin"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

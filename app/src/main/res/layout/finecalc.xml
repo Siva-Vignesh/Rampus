@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    tools:context=".finecalc">
+<TextView
+    android:id="@+id/finecalctitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="75sp"
+    android:fontFamily="@font/opensansbold"
+    android:textSize="20dp"
+    android:text="Fine Calculator"
+    android:layout_centerHorizontal="true"
+    android:textColor="#fff"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/finecalctitle"
+        android:layout_marginTop="75sp"
+        android:background="@drawable/curve">
+
+        <TextView
+            android:id="@+id/noofbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="No of book"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/noofbookedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/noofbook"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/noofbook"
+            android:inputType="number"
+            android:hint="(number)"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/noofdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noofbook"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="No of days"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/noofdaysedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/noofdays"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/noofbook"
+            android:gravity="center"
+            android:hint="(number)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/finecalcbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/noofdays"
+            android:layout_alignStart="@+id/noofdays"
+            android:layout_alignEnd="@+id/noofdaysedittext"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/bluebtn"
+            android:fontFamily="@font/opensansbold"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/finecalcresetbtn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/finecalcbtn"
+            android:layout_alignEnd="@+id/finecalcbtn"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#fff"
+            android:background="@drawable/bluebtn"
+            android:text="Reset"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/finecalcresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#000"
+            android:layout_below="@id/finecalcbtn"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</RelativeLayout>

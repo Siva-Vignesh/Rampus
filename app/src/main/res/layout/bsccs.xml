@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ca37"
+    tools:context=".bsccs">
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:background="@drawable/whitecircle"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginEnd="10dp"
+        android:rotation="-45"/>
+    <TextView
+        android:id="@+id/bsccsnotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Bsc (cs)"
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bsccsfirstyear"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccsnotes"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/firstyear2"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/opensansbold"
+        android:text="First Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccsfirstyear2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccsnotes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient2"
+        android:fontFamily="@font/opensansbold"
+        android:text="Second Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccssecondyear"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccsfirstyear"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/secondyear2"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Third Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccssecondyear2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccsfirstyear"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Fourth Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccsthirdyear"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccssecondyear2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient5"
+        android:fontFamily="@font/opensansbold"
+        android:text="Fifth Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bsccsthirdyear2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/bsccssecondyear2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/thirdyear"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Sixth Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/bsccslab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bsccsthirdyear"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Practical Lab "
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_below="@+id/bsccslab"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lab_c"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Digital Logic Fundamental Lab"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Problem Solving Techniques lab "
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="C++ Lab "
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c4"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Open Office Lab "
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c5"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Java Programming Lab"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c6"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Multimedia Lab "
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c7"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="DBMS LAB "
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c8"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Scripting Language Lab"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c9"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Data Mining"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c10"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Compilier Design"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c11"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Python Lab"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c12"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:text="Mini Project"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

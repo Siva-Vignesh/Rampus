@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sivavignesh">
+
+<RelativeLayout
+    android:id="@+id/topgradient"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/gradient7">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/sivavignesh" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Name here"
+        android:textSize="25sp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"/>
+
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Achievements"
+        android:textSize="15dp"
+        android:textColor="@color/btwhite" />
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView24"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/opensansbold"
+        android:text="location"
+        android:textSize="10dp"
+        android:textColor="@color/btwhite" />
+    <Button
+        android:id="@+id/close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="@font/opensansbold"
+        android:text="X" />
+</RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/descriptionquotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topgradient"
+        android:background="#e1e1e1">
+
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/opensansbold"
+            android:text="quote"
+            android:textSize="15dp"
+            android:textColor="#fd7551"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/blog"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_above="@id/descriptionquotes"
+        android:layout_marginBottom="-25dp"
+        android:background="@drawable/blogbtn"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#fd7551"
+        android:text="Blog" />
+</RelativeLayout>

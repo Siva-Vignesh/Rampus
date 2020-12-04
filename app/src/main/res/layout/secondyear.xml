@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ca37"
+    tools:context=".secondyear">
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:background="@drawable/whitecircle"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginEnd="10dp"
+        android:rotation="-45"/>
+    <TextView
+        android:id="@+id/s3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/third_semester"
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/java"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/s3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/rdbms"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/programming_in_java"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/rdbms"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/s3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient2"
+        android:text="Relational Database Management"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/opensansbold"/>
+
+    <Button
+        android:id="@+id/ds"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/rdbms"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/gradient3"
+        android:text="Fundamentals of Data structure"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/opensansbold"/>
+
+    <Button
+        android:id="@+id/spss"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/rdbms"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/dlf"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Statistical Package for Social Sciences"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/bi"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ds"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/rdbms"
+        android:background="@drawable/gradient5"
+        android:fontFamily="@font/opensansbold"
+        android:text="Business Intelligence"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/m3"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ds"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient3"
+        android:text="Statistical Methods"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/opensansbold"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

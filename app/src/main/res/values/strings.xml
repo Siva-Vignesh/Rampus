@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">Rampus</string>
+
+    <string name="open">open</string>
+
+    <string name="close">close</string>
+
+    <string name="welcome_to_bca_lite">Welcome to BCA lite!!</string>
+
+    <string name="notes">Notes</string>
+
+    <string name="sgpa_calc">SGPA Calculator</string>
+
+    <string name="cgpa">CGPA</string>
+
+    <string name="mark_estimator">Mark Estimator</string>
+
+    <string name="student_login">Student Login</string>
+
+    <string name="semester_results">Semester Results</string>
+
+    <string name="Developed_with_love_by_Titan_Kings">Developed with ❤ by Titan Kings</string>
+
+    <string name="cgpa_calculator">CGPA Calculator</string>
+
+    <string name="semester">Semester</string>
+
+    <string name="credits">Credits</string>
+
+    <string name="sgpa">Sgpa</string>
+
+    <string name="_1">1</string>
+
+    <string name="_2">2</string>
+
+    <string name="_3">3</string>
+
+    <string name="_4">4</string>
+
+    <string name="_5">5</string>
+
+    <string name="_6">6</string>
+
+    <string name="_7">7</string>
+
+    <string name="_8">8</string>
+
+    <string name="total_credit_in_sem1">Total Credit in sem1</string>
+
+    <string name="sem1_sgpa">sem1 sgpa</string>
+
+    <string name="calculate">Calculate</string>
+
+    <string name="first_semester">First Semester</string>
+
+    <string name="second_semester">Second Semester</string>
+
+    <string name="third_semester">Third Semester</string>
+
+    <string name="fourth_semester">Fourth Semester</string>
+
+    <string name="fifth_semester">Fifth Semester</string>
+
+    <string name="sixth_semester">Sixth Semester</string>
+
+    <string name="tamil_i">Tamil-I</string>
+
+    <string name="english_i">English-I</string>
+
+    <string name="programming_in_c">Programming in c</string>
+
+    <string name="open_office_and_linux">Open office and Linux</string>
+
+    <string name="maths_i">Maths-I</string>
+
+    <string name="tamil_ii">Tamil-II</string>
+
+    <string name="english_ii">English-II</string>
+
+    <string name="object_oriented_programming_using_c">Object Oriented Programming using c++</string>
+
+    <string name="fundamentals_of_data_structures">Fundamentals of data structures</string>
+
+    <string name="maths_ii">Maths-II</string>
+
+    <string name="programming_in_java">Programming in Java</string>
+
+    <string name="rdbms">RDBMS</string>
+
+    <string name="dlf">DLF</string>
+
+    <string name="statistical_methods">Statistical Methods</string>
+
+    <string name="computer_networks">Computer Networks</string>
+
+    <string name="vb_net">Vb.net</string>
+
+    <string name="resource_management_techniques">Resource Management Techniques</string>
+
+    <string name="web_technology">Web Technology</string>
+
+    <string name="php_and_mysql">Php and Mysql</string>
+
+    <string name="multimedia_and_animation">Multimedia and Animation</string>
+
+    <string name="operating_system">Operating System</string>
+
+    <string name="e_commerce">E-Commerce</string>
+
+    <string name="evs">Evs</string>
+
+    <string name="object_oriented_analysis_and_design">Object-oriented analysis and design</string>
+
+    <string name="cloud_computing">Cloud computing</string>
+
+    <string name="software_engineering_and_testing">Software engineering and testing</string>
+
+    <string name="data_mining_and_warehousing">Data mining and warehousing</string>
+
+    <string name="more">More</string>
+
+    <string name="reset">Reset</string>
+
+    <string name="srmist">SRM IST</string>
+
+    <string name="oscar">OSCAR</string>
+
+    <string name="ramapuram">Ramapuram</string>
+
+    <string name="title_here">Title here</string>
+
+    <string name="code_here">code here</string>
+
+    <string name="output">Output:</string>
+
+    <string name="output_here">Output here</string>
+
+    <string name="quote_of_the_day">Quote of the Day</string>
+
+    <string name="quote_here">quote here</string>
+
+    <string name="looking_for_more">Looking for more ?</string>
+
+    <string name="faculty_and_blogs">Faculty profile \n (DOCSA)</string>
+
+    <string name="attendance">Attendance Assistant</string>
+
+    <string name="faculty_login">Faculty Login</string>
+
+    <string name="time_table">Time Table</string>
+
+    <string name="exam_time_table">Exam Time Table</string>
+
+    <string name="coding">Coding</string>
+
+    <string name="grade_estimator">Grade Estimator</string>
+
+    <string name="placement">Placement</string>
+
+    <string name="bca">BCA</string>
+
+    <string name="mca">MCA</string>
+
+    <string name="b_sc_cs">B.sc (CS)</string>
+
+
+    -
+    <string name="freepix">
+-Poster credits : 
+<a href="https://www.freepik.com">https://www.freepik.com/</a>
+
+</string>
+
+    <string name="freepix1">Designers : </string>
+
+    <string name="freepix2">Vectorpocket / Freepik \npikisuperstar / Freepik \nrawpixel.com / Freepik</string>
+
+    <string name="addcourse">-To add your class in attendance,just mail me the data in .txt format in the following way \n {\"siva - 101 \\n\",\"karthick - 73 \\n\"};</string>
+
+    <string name="new_theme">2</string>
+
+    <string-array name="theme">
+
+        <item>Orange shine</item>
+
+        <item>Boom Blue</item>
+
+        <item>Pinky glow</item>
+
+        <item>Greenify</item>
+
+        <item>Pinky blue</item>
+
+        <item>Ocean blue</item>
+        <item>Santo"</item>
+        <item>Real red</item>
+        <item>Pinky glow</item>
+
+    </string-array>
+
+    <string-array name="creditspinner">
+
+        <item>0</item>
+
+        <item>1</item>
+
+        <item>2</item>
+
+        <item>3</item>
+
+        <item>4</item>
+
+        <item>5</item>
+
+    </string-array>
+
+    <string-array name="grd">
+
+        <item>O</item>
+
+        <item>A+</item>
+
+        <item>A</item>
+
+        <item>B+</item>
+
+        <item>B</item>
+
+        <item>c</item>
+
+        <item>p</item>
+
+    </string-array>
+
+
+    <string-array name="course">
+        <item>BCA</item>
+        <item>BSC (cs)</item>
+        <item>BBA</item>
+        <item>VISCOM</item>
+        <item>BCOM</item>
+    </string-array>
+
+
+    <string-array name="ccourse">
+        <item>BCA</item>
+        <item>BSC (cs)</item>
+        <item>MCA</item>
+    </string-array>
+
+
+    <string-array name="year">
+        <item>I year</item>
+        <item>II year</item>
+        <item>III year</item>
+    </string-array>
+
+
+    <string-array name="section">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+
+    <string-array name="hourspinner">
+
+        <item>1</item>
+
+        <item>2</item>
+
+        <item>3</item>
+
+        <item>4</item>
+
+        <item>5</item>
+
+        <item>6</item>
+
+    </string-array>
+
+</resources>

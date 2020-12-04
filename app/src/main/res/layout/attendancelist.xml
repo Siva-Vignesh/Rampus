@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attendancelist">
+<RelativeLayout
+    android:id="@+id/hello"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/welcome">
+
+    <TextView
+        android:id="@+id/hellotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+    <TextView
+        android:id="@+id/attendancelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello"
+       android:fontFamily="@font/opensansbold"
+        android:text="No text detected"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"/>
+</RelativeLayout>

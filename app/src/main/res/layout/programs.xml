@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8251ff"
+    tools:context=".Programs">
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellowobject"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="75dp"
+        android:paddingBottom="150dp"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/programpractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program practice"
+        android:textColor="#111"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/prgc"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/programpractice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bt3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Programming in C"
+        android:textAllCaps="false"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/prgcpp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/prgc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bt3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Programming in C++"
+        android:textAllCaps="false"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/prgjava"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/prgcpp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bt3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Java"
+        android:textAllCaps="false"
+        android:textColor="#fff"/>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

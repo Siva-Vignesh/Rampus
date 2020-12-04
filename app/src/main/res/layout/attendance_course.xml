@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient8"
+    tools:context=".attendance_course">
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellowobject"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/attendancecoursetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Attendance Assistant"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attendancecoursetitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Course :"
+            android:textColor="#e73b37"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/coursespinner"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/course"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/course"
+            android:backgroundTint="#e63b37"
+            android:ems="10"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#e63a37"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course"
+            android:layout_alignEnd="@+id/course"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Year :"
+            android:textColor="#e73b37"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/yearspinner"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/year"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/course"
+            android:backgroundTint="#e73b37"
+            android:ems="10"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year"
+            android:layout_alignEnd="@+id/year"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Section :"
+            android:textColor="#e63b37"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/sectionspinner"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/section"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/course"
+            android:backgroundTint="#e73b37"
+            android:ems="10"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/sectionspinner"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
+                android:buttonTint="#F44336"/>
+
+            <RadioButton android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="#F44336"/>
+            <RadioButton android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="#F44336"/>
+            <RadioButton android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="#F44336"/>
+            <RadioButton android:id="@+id/radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="#F44336"/>
+            <RadioButton android:id="@+id/radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="#F44336"/>
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@+id/go"
+            android:text="Check"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:backgroundTint="#ff0300" />
+        <Button
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#ff0300"
+            android:text="Enter"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

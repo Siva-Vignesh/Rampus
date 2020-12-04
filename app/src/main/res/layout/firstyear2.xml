@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ca37"
+    tools:context=".firstyear2">
+
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:background="@drawable/whitecircle"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginEnd="10dp"
+        android:rotation="-45"/>
+    <TextView
+        android:id="@+id/s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/second_semester"
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/t2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/s2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/e2"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/tamil_ii"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/e2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/s2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient2"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/english_ii"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+
+    <Button
+        android:id="@+id/f2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/t2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/e2"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="French-II"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+
+    <Button
+        android:id="@+id/h2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/e2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient5"
+        android:fontFamily="@font/opensansbold"
+        android:text="Hindi-II"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/cpp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/f2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/wt"
+        android:background="@drawable/gradient2"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/object_oriented_programming_using_c"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/wt"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/h2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Web Technology"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/m2"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/wt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient5"
+        android:text="@string/maths_ii"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

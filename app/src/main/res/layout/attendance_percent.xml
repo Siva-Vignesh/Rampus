@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attendance_percent"
+    android:background="@drawable/gradient8">
+    <TextView
+        android:id="@+id/aattendancecoursetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Attendance Assistant"
+        android:fontFamily="@font/opensansbold"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#fff"/>
+    <RelativeLayout
+        android:id="@+id/amainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellowobject"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="20dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/acourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Course :"
+            android:textColor="#e73b37"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/acoursespinner"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/acourse"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/acourse"
+            android:backgroundTint="#e63b37"
+            android:ems="10"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#e63a37"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ayear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acourse"
+            android:layout_alignEnd="@+id/acourse"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Year :"
+            android:textColor="#e73b37"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/ayearspinner"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/ayear"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/acourse"
+            android:backgroundTint="#e73b37"
+            android:ems="10"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+
+
+        <Button
+            android:id="@+id/acheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ayearspinner"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="25dp"
+           android:layout_alignParentEnd="true"
+            android:text="Check"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:backgroundTint="#FF0000" />
+
+</RelativeLayout>
+
+</RelativeLayout>

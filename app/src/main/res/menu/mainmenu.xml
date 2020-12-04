@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="profile">
+        <menu>
+            <item android:id="@+id/name"
+                android:title="Edit my name " />
+        </menu>
+    </item>
+
+    <item android:title="Course">
+        <menu>
+            <item android:id="@+id/bca"
+                android:title="BCA" />
+            <item android:id="@+id/bsccs"
+                android:title="B.Sc(cs)" />
+            <item android:id="@+id/others"
+                android:title="others" />
+        </menu>
+    </item>
+    <item android:title="websites">
+        <menu>
+            <item android:id="@+id/StudentERP"
+                android:title="Student ERP"/>
+            <item android:id="@+id/Studentresult"
+                android:title="Student Result"/>
+            <item android:id="@+id/Studentfeekart"
+                android:title="Student Feekart"/>
+            <item android:id="@+id/facultylogin"
+                android:title="@string/faculty_login"/>
+        </menu>
+    </item>
+    <item android:title="Others">
+        <menu>
+            <item android:id="@+id/feedback"
+                android:title="Share" />
+
+            <item android:id="@+id/credits"
+                android:title="Credits" />
+            <item
+                android:id="@+id/Share"
+                android:title="Update" />
+            <item
+                android:id="@+id/aboutus"
+                android:title="About us" />
+            <item
+                android:id="@+id/Nothing"
+                android:title=" " />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notesbg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ca37"
+    tools:context=".bca">
+<ImageView
+    android:layout_width="1000dp"
+    android:layout_height="250dp"
+    android:background="@drawable/whitecircle"
+    android:layout_marginTop="180dp"
+    android:layout_marginStart="-300dp"
+    android:layout_marginEnd="10dp"
+    android:rotation="-45"/>
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/notes"
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/firstyear"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/notes"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/firstyear2"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/opensansbold"
+        android:text="First Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/firstyear2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/notes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient2"
+        android:fontFamily="@font/opensansbold"
+        android:text="Second Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/secondyear"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/firstyear2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Third Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/secondyear2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/firstyear2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/secondyear"
+        android:background="@drawable/gradient4"
+        android:fontFamily="@font/opensansbold"
+        android:text="Fourth Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/thirdyear"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/secondyear2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/thirdyear2"
+        android:background="@drawable/gradient5"
+        android:fontFamily="@font/opensansbold"
+        android:text="Fifth Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/thirdyear2"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/secondyear2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gradient3"
+        android:fontFamily="@font/opensansbold"
+        android:text="Sixth Semester"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdyear"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Practical Lab "
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_below="@+id/lab"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lab_c"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Programming In C \nLaboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Open Office Using Linux Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Object Oriented Programming Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c4"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Web Technology Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c5"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Programming In Java Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c6"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Relational Database Management Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c7"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Windows Programming Using VB .Net Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c8"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Multimedia and Animation Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c9"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Computer Networks Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c10"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="PHP and MYSQL Programming Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c11"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Object Oriented Analysis and Design Laboratory"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lab_c12"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="false"
+                android:text="Project Work"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

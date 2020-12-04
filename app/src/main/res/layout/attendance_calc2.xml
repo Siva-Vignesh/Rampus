@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient4"
+    tools:context=".attendance_calc2">
+    <Button
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="type 1"
+        android:textAllCaps="false"
+        android:background="@drawable/btn1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/attendancecalctitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Calculator \n (Type 2)"
+        android:gravity="center"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:id="@+id/attendancecalclayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve"
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/attendancecalctitle"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hourtaken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:layout_marginTop="50dp"
+                android:text="Hour taken :"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/hourtakenedittext"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/hourtaken"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/hourtaken"
+                android:gravity="center"
+                android:hint="(Number)"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/absenthour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hourtaken"
+                android:layout_alignEnd="@+id/hourtaken"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Absent hour :"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/absenthouredittext"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/absenthour"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toEndOf="@+id/hourtaken"
+                android:layout_marginEnd="20dp"
+                android:hint="(Number)"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/addhour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/absenthour"
+                android:layout_alignEnd="@+id/hourtaken"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Remaining hour:"
+                android:textColor="#000"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/addhouredittext"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/addhour"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toEndOf="@+id/hourtaken"
+                android:layout_marginEnd="20dp"
+                android:hint="(Number)"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/attendancecalcbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/addhour"
+                android:layout_alignStart="@+id/absenthour"
+                android:layout_alignEnd="@+id/addhouredittext"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/greenbtn"
+                android:fontFamily="@font/opensansbold"
+                android:text="Calulate"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/attendancecalcbtn"
+                android:layout_alignEnd="@+id/attendancecalcbtn"
+                android:layout_marginEnd="0dp"
+                android:text="Reset"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:background="@drawable/greenbtn"
+                />
+            <TextView
+                android:id="@+id/currentpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/attendancecalcbtn"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/nextpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/currentpercent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

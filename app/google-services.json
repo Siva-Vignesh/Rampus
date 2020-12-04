@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "747642727578",
+    "firebase_url": "https://rampus-bcec4.firebaseio.com",
+    "project_id": "rampus-bcec4",
+    "storage_bucket": "rampus-bcec4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747642727578:android:39e72f67cf871612840323",
+        "android_client_info": {
+          "package_name": "com.sivavignesh.rampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747642727578-3vc0ilujb10d4ti1p7virjane6iahh20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sivavignesh.rampus",
+            "certificate_hash": "0a88a2314f3f9a34210941098d662e5936d36c9f"
+          }
+        },
+        {
+          "client_id": "747642727578-5tb77bp8a8tontiumift6oapcqavkt6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7--JqSeCGFWKo-oWYx4SjMMJPpYZAf70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747642727578-5tb77bp8a8tontiumift6oapcqavkt6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

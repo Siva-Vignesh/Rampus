@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".course"
+    android:background="#f2ca37">
+<RelativeLayout
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yellowobject"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="75dp"
+    android:paddingBottom="150dp"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:textColor="#111"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/bca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bt2"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/bca"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bsccs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bca"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bt2"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/b_sc_cs"
+        android:textSize="18sp"
+        android:textColor="#111"/>
+
+    <Button
+        android:id="@+id/others"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsccs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bt2"
+        android:fontFamily="@font/opensansbold"
+        android:textAllCaps="false"
+        android:text="Others"
+        android:textSize="18sp" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainlayout"
+        android:layout_alignEnd="@+id/mainlayout"
+        android:layout_marginEnd="10dp"
+        android:text="Description"
+        android:textColor="#fff"
+        android:onClick="onClick"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="18dp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

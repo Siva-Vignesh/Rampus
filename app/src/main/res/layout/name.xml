@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".name">
+<RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginStart="-25dp"
+    android:layout_marginEnd="-25dp"
+    android:background="@drawable/welcome">
+<TextView
+    android:id="@+id/welcometo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome to"
+    android:fontFamily="@font/opensansbold"
+    android:textSize="40dp"
+    android:textColor="#fff"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"/>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:background="@drawable/sublogo"
+        android:layout_below="@id/welcometo"
+        android:layout_centerHorizontal="true"
+       />
+
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/heyfellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Hey fellow"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heyfellow"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="enter your name"
+        android:fontFamily="@font/opensansbold"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/gradient5circle"
+        android:text="Save and Explore"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="15dp"/>
+</RelativeLayout>

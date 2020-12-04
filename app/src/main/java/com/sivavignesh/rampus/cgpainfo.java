@@ -1,0 +1,13 @@
+package com.sivavignesh.rampus;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class cgpainfo extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.cgpainfo);
+    }
+}

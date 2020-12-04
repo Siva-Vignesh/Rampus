@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutus">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="@string/app_name"
+                android:textColor="#ec1a1a"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView28"
+                android:fontFamily="@font/opensansbold"
+                android:padding="10dp"
+                android:gravity="fill"
+                android:text="-This application has been developed for B.Sc Cs,BCA,MCA students of our department."
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:fontFamily="@font/opensansbold"
+                android:padding="10dp"
+                android:gravity="fill"
+                android:text="-This app contains lecture notes."
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description1"
+                android:fontFamily="@font/opensansbold"
+                android:padding="10dp"
+                android:gravity="fill"
+                android:text="-Students can check their CGPA/GPA easily and quickly."
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/descriptionn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description2"
+                android:fontFamily="@font/opensansbold"
+                android:padding="10dp"
+                android:gravity="fill"
+                android:text="-Contains some interesting module like attendance assistant , program hub etc."
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/teamname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriptionn"
+                android:layout_marginTop="20dp"
+                android:text="Titan Kings"
+                android:textColor="#000"
+                android:fontFamily="@font/opensansbold"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamname"
+                android:layout_centerHorizontal="true"
+                android:text="titankings07@gmail.com"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sivalayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/red"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/siva"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/sivavignesh" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="Siva Vignesh"
+                        android:textColor="@color/btwhite"
+                        android:textSize="25dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/orange"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/praveen"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/praveen" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="Praveen kumar"
+                        android:textColor="@color/btwhite"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/violet"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/karthick"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/karthick" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="Karthick Kumar"
+                        android:textColor="@color/btwhite"
+                        android:textSize="25dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/mentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/developer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Our Mentor"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:fontFamily="@font/opensansbold"/>
+
+            <ImageView
+                android:id="@+id/mentorimage"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/mentor"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/krishnamoorthy"/>
+
+            <TextView
+                android:id="@+id/mentorid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mentorimage"
+                android:text="Krishnamoorthy"
+                android:fontFamily="@font/opensansbold"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/ourbatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mentorid"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/darkbluebtn"
+                android:fontFamily="@font/opensansbold"
+                android:gravity="center"
+                android:textColor="#fff "
+                android:text="Our Batch"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Something we left in our college is Our memories and this application."
+                android:fontFamily="@font/opensansbold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_below="@id/ourbatch"
+                android:padding="10dp"
+                android:layout_marginBottom="50dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

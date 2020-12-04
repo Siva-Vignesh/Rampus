@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".sgpa">
+
+    <Button
+        android:id="@+id/sgpainfobutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@android:drawable/ic_menu_help" />
+    <TextView
+        android:id="@+id/spga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/sgpa_calc"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="Subject" />
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/semester"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/semester"
+        android:text="@string/credits"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"/>
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/credit"
+        android:layout_alignEnd="@+id/grd2"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="grade point"
+        android:textColor="@color/btwhite" />
+
+    <TextView
+        android:id="@+id/sone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semester"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_1" />
+
+    <TextView
+        android:id="@+id/stwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sone"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_2" />
+
+    <TextView
+        android:id="@+id/sthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stwo"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_3" />
+
+    <TextView
+        android:id="@+id/sfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sthree"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_4" />
+
+    <TextView
+        android:id="@+id/sfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfour"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_5" />
+
+    <TextView
+        android:id="@+id/ssix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfive"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_6" />
+
+    <TextView
+        android:id="@+id/sseven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssix"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_7" />
+
+    <TextView
+        android:id="@+id/seight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sseven"
+        android:layout_alignStart="@+id/semester"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="@color/btwhite"
+        android:text="@string/_8" />
+
+    <Spinner
+        android:id="@+id/sc1"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/credit"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/sone"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/sc2"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/stwo"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/sc3"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/sthree"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/sc4"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc3"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/sfour"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/sc5"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc4"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/sfive"
+        android:ems="10"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/sc6"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc5"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/ssix"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:fontFamily="@font/opensansbold"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/sc7"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc6"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/sseven"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/sc8"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sc7"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/seight"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:inputType="numberSigned"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd1"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grade"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:textColor="#fff"
+        android:backgroundTint="#fff"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd2"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd3"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd4"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd5"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd6"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd7"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <Spinner
+        android:id="@+id/grd8"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/grd7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensansbold"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/cgparesult"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grd8"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/r"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grd8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/opensansbold"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/sgpabt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/r"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/sreset"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/r"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="@font/opensansbold"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9384783085331384/5899237284">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
